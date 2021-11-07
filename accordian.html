@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+
+}
+body{
+min-height:100vh;
+display:flex;
+justify-content: center;
+align-items: center;
+background-color:#364975 ;
+color:white;
+
+}
+.accordian{
+width:100%;
+height:auto;
+border:1px solid gray;
+background:white;
+color:black;
+}
+.accDiv{
+width:100%;
+height:auto;
+border:1px solid green;
+
+}
+.accbtn{
+cursor:pointer;
+background:#2b4ea1;
+color:white;
+padding:10px;
+border:1px solid green;
+position: relative;
+}
+
+
+.acctext{
+background:#78a4eb;
+padding:10px;
+display: none;
+color:white;
+
+}
+
+.accbtn .accsym {
+    position: absolute;
+    right: 6px;
+    font-size: 27px;
+    top: 5px;
+    width: 31px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    background: #2ba1968c;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="accordian">
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+    <div class="accbtn">Who are You ?<p class="accsym">+</p></div>
+    <div class="acctext">I am Md Mijanur Rahaman. Founder & CEO of MR Laboratory. I am webdeveloper , Youtuber and blogger.</div>
+
+
+
+
+    </div>
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script> 
+        /*  
+Hey Dear, I'm Md Mijanur Rahaman, 
+Founder & CEO of MR Laboratory.
+I have 2 years experience of Blogger template Development. I have enough ideas about HTML CSS and JavaScript to develop blogger theme. Inshaallah I will do better things for you. I can solve Blogger's problem. If you have any problem you can let me know, I will try my best to solve your problem.
+Hire me for your work.
+Email: admin@mrlaboratory.com
+Fb: fb.com/mdmijanurrahaman.mr
+Phone No: 01854650673
+
+*/
+        var accsym = $('.accbtn .accsym');
+$('.accbtn').on('click',function(){
+    var indexNum = $(this).index()/2;
+$('.acctext:eq('+indexNum+')').slideToggle();
+var inselector = $('.accbtn .accsym:eq('+indexNum+')');
+if (inselector.text() === "+") {
+    inselector.text('-')
+  } else {
+    inselector.text('+')
+  }
+
+}); console.log('%cDeveloped by Md Mijanur Rahaman 😎\n=> https://fb.com/mdmijanurrahaman.mr \n Website : mrlaboratory.com ', 'font:2.5em Roboto;color:#ff0000')
+
+    
+        </script>
+</body>
+</html>
